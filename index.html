@@ -23,14 +23,385 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "light-red": "#F85559",
+              dark: "#121212",
             },
             fontFamily: {
-              poppins: ["Poppins", "sans - serif"],
+              "font-poppins": ["Poppins", "sans - serif"],
             },
           },
         },
       };
     </script>
   </head>
-  <body></body>
+  <body>
+    <!-- nav container -->
+    <nav class="relative container mx-auto px-5 pt-12 lg:px-0 lg:pt-[50px]">
+      <!-- flex for all item -->
+      <div
+        class="flex items-center justify-between lg:bg-light-red lg:px-[50px] lg:py-8 lg:rounded-full"
+      >
+        <!-- flex container for logo and menu and search -->
+        <!-- right menu -->
+        <div
+          class="hidden space-x-[30px] font-poppins text-lg font-medium lg:flex"
+        >
+          <a href="#" class="text-white hover:text-black">Home</a>
+          <a href="#" class="text-white hover:text-black">About Us</a>
+          <a href="#" class="text-white hover:text-black">Shop</a>
+          <a href="#" class="text-white hover:text-black">All Fruits</a>
+        </div>
+        <!-- image and title -->
+        <div
+          class="flex items-center text-dark font-poppins text-xl font-bold space-x-2 lg:text-white lg:text-[40px] lg:font-bold lg:space-x-4"
+        >
+          <img
+            class="h-9 w-8 lg:h-[60px] lg:w-[55px]"
+            src="./images/logo.png"
+            alt="logo"
+          />
+          <h1>Fruit Burst</h1>
+        </div>
+        <!-- search -->
+        <div class="relative hidden lg:block">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search here"
+            class="py-5 pl-7 pr-72 rounded-full"
+          />
+          <img
+            class="absolute top-5 right-5"
+            src="./images/search.png"
+            alt="search"
+          />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- exotic tastes -->
+      <div class="relative container mx-auto px-5 py-6 lg:pt-14 lg:pb-[265px]">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-[390px] lg:pb-[205px] lg:pr-[389px] bg-gradient-to-r from-[#121212] to-[#121212]"
+              style="
+                background-image: url('./images/banner1.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+              "
+            >
+              <p class="font-poppins text-2xl font-extrabold lg:text-7xl">
+                Exotic tastes at your <br />
+                doorstep
+              </p>
+              <p
+                class="font-poppins text-sm font-normal mt-1 lg:text-xl lg:font-medium lg:mt-6"
+              >
+                We supply highly quality organic products
+              </p>
+              <button
+                class="py-[9px] px-[18px] bg-light-red rounded mt-4 text-lg font-poppins font-bold lg:text-xl lg:font-extrabold lg:py-[30px] lg:px-5 lg:mt-8 lg:rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4"
+                ><img
+                  class="rounded-full p-[6px] bg-black lg:p-[14px]"
+                  src="./images/right.png"
+                  alt="right"
+              /></a>
+              <a href="#slide2"
+                ><img
+                  class="rounded-full p-[6px] bg-black lg:p-[14px]"
+                  src="./images/left.png"
+                  alt="left"
+              /></a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div
+              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-[390px] lg:pb-[205px] lg:pr-[389px] bg-gradient-to-r from-[#121212] to-[#121212]"
+              style="
+                background-image: url('./images/banner2.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+              "
+            >
+              <p class="font-poppins text-2xl font-extrabold lg:text-7xl">
+                Exotic tastes at your <br />
+                doorstep
+              </p>
+              <p
+                class="font-poppins text-sm font-normal mt-1 lg:text-xl lg:font-medium lg:mt-6"
+              >
+                We supply highly quality organic products
+              </p>
+              <button
+                class="py-[9px] px-[18px] bg-light-red rounded mt-4 text-lg font-poppins font-bold lg:text-xl lg:font-extrabold lg:py-[30px] lg:px-5 lg:mt-8 lg:rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1"
+                ><img
+                  class="rounded-full p-[6px] bg-black lg:p-[14px]"
+                  src="./images/right.png"
+                  alt="right"
+              /></a>
+              <a href="#slide3"
+                ><img
+                  class="rounded-full p-[6px] bg-black lg:p-[14px]"
+                  src="./images/left.png"
+                  alt="left"
+              /></a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div
+              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-[390px] lg:pb-[205px] lg:pr-[389px] bg-gradient-to-r from-[#121212] to-[#121212]"
+              style="
+                background-image: url('./images/banner3.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+              "
+            >
+              <p class="font-poppins text-2xl font-extrabold lg:text-7xl">
+                Exotic tastes at your <br />
+                doorstep
+              </p>
+              <p
+                class="font-poppins text-sm font-normal mt-1 lg:text-xl lg:font-medium lg:mt-6"
+              >
+                We supply highly quality organic products
+              </p>
+              <button
+                class="py-[9px] px-[18px] bg-light-red rounded mt-4 text-lg font-poppins font-bold lg:text-xl lg:font-extrabold lg:py-[30px] lg:px-5 lg:mt-8 lg:rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2"
+                ><img
+                  class="rounded-full p-[6px] bg-black lg:p-[14px]"
+                  src="./images/right.png"
+                  alt="right"
+              /></a>
+              <a href="#slide4"
+                ><img
+                  class="rounded-full p-[6px] bg-black lg:p-[14px]"
+                  src="./images/left.png"
+                  alt="left"
+              /></a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div
+              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-[390px] lg:pb-[205px] lg:pr-[389px] bg-gradient-to-r from-[#121212] to-[#121212]"
+              style="
+                background-image: url('./images/banner4.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+              "
+            >
+              <p class="font-poppins text-2xl font-extrabold lg:text-7xl">
+                Exotic tastes at your <br />
+                doorstep
+              </p>
+              <p
+                class="font-poppins text-sm font-normal mt-1 lg:text-xl lg:font-medium lg:mt-6"
+              >
+                We supply highly quality organic products
+              </p>
+              <button
+                class="py-[9px] px-[18px] bg-light-red rounded mt-4 text-lg font-poppins font-bold lg:text-xl lg:font-extrabold lg:py-[30px] lg:px-5 lg:mt-8 lg:rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3"
+                ><img
+                  class="rounded-full p-[6px] bg-black lg:p-[14px]"
+                  src="./images/right.png"
+                  alt="right"
+              /></a>
+              <a href="#slide1"
+                ><img
+                  class="rounded-full p-[6px] bg-black lg:p-[14px]"
+                  src="./images/left.png"
+                  alt="left"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- five fruits -->
+        <div
+          class="hidden lg:absolute lg:w-[1100px] lg:grid lg:grid-cols-5 lg:font-poppins lg:text-xl lg:font-medium lg:bottom-[157px] lg:left-[214px] lg:bg-white lg:p-8"
+        >
+          <div class="flex flex-col items-center justify-center">
+            <img src="./images/fruit1.png" alt="fruit" />
+            <p class="mt-4">Grapes</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="./images/fruit2.png" alt="fruit" />
+            <p class="mt-4">Orange</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="./images/fruit3.png" alt="fruit" />
+            <p class="mt-4">Mango</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="./images/fruit4.png" alt="fruit" />
+            <p class="mt-4">Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="./images/fruit5.png" alt="fruit" />
+            <p class="mt-4">Pomegranate</p>
+          </div>
+        </div>
+      </div>
+      <!-- deal and time -->
+      <div
+        class="container mx-auto flex flex-col items-center justify-center gap-5 px-[49px] lg:flex-row lg:justify-between lg:px-0 lg:gap-[540px]"
+      >
+        <div class="text-center font-poppins lg:text-left">
+          <h1 class="text-xl font-extrabold text-dark lg:text-5xl">
+            Deal of the day
+          </h1>
+          <p
+            class="text-sm font-medium text-[#12121299] leading-6 mt-2 lg:text-base lg:mt-6"
+          >
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+        <div class="grid grid-flow-col text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 15"></span>
+            </span>
+            days
+          </div>
+          <div class="pt-3">
+            <img src="./images/clock-dot.svg" alt="" />
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 10"></span>
+            </span>
+            hours
+          </div>
+          <div class="pt-3">
+            <img src="./images/clock-dot.svg" alt="" />
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 24"></span>
+            </span>
+            min
+          </div>
+          <div class="pt-3">
+            <img src="./images/clock-dot.svg" alt="" />
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 16"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+      <!-- fruits card -->
+      <div
+        class="container grid grid-cols-1 gap-4 mx-auto px-5 pt-5 pb-5 lg:py-12 lg:px-0 lg:grid-cols-4"
+      >
+        <div
+          class="flex flex-col justify-center items-center py-[49px] border border-[#12121226] rounded-lg lg:py-[50px] lg:px-[87px]"
+        >
+          <img src="./images/fruit6.png" alt="fruits" />
+          <p class="font-poppins text-2xl font-bold mt-12 mb-6">
+            12.90$ - 18.85$
+          </p>
+          <hr class="h-[1px] w-3/4 bg-[#12121226]" />
+          <p
+            class="font-poppins text-base font-medium text-[#12121299] mt-6 mb-6"
+          >
+            Apples
+          </p>
+          <img class="mb-8" src="./images/star.png" alt="star" />
+          <button>Details</button>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center py-[49px] border border-[#12121226] rounded-lg lg:py-[50px] lg:px-[87px]"
+        >
+          <img src="./images/fruit7.png" alt="fruits" />
+          <p class="font-poppins text-2xl font-bold mt-12 mb-6">
+            12.90$ - 18.85$
+          </p>
+          <hr class="h-[1px] w-3/4 bg-[#12121226]" />
+          <p
+            class="font-poppins text-base font-medium text-[#12121299] mt-6 mb-6"
+          >
+            Orange
+          </p>
+          <img class="mb-8" src="./images/star.png" alt="star" />
+          <button>Details</button>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center py-[49px] border border-[#12121226] rounded-lg lg:py-[50px] lg:px-[87px]"
+        >
+          <img src="./images/fruit8.png" alt="fruits" />
+          <p class="font-poppins text-2xl font-bold mt-12 mb-6">
+            12.90$ - 18.85$
+          </p>
+          <hr class="h-[1px] w-3/4 bg-[#12121226]" />
+          <p
+            class="font-poppins text-base font-medium text-[#12121299] mt-6 mb-6"
+          >
+            Red Dragon
+          </p>
+          <img class="mb-8" src="./images/star.png" alt="star" />
+          <button>Details</button>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center py-[49px] border border-[#12121226] rounded-lg lg:py-[50px] lg:px-[87px]"
+        >
+          <img src="./images/fruit6.png" alt="fruits" />
+          <p class="font-poppins text-2xl font-bold mt-12 mb-6">
+            12.90$ - 18.85$
+          </p>
+          <hr class="h-[1px] w-3/4 bg-[#12121226]" />
+          <p
+            class="font-poppins text-base font-medium text-[#12121299] mt-6 mb-6"
+          >
+            Banana
+          </p>
+          <img class="mb-8" src="./images/star.png" alt="star" />
+          <button>Details</button>
+        </div>
+      </div>
+      <div class="text-center mt-6 lg:mt-0">
+        <button
+          class="font-poppins text-xl text-white font-extrabold bg-light-red rounded-lg py-4 px-[30px]"
+        >
+          Shop All
+        </button>
+      </div>
+    </main>
+  </body>
 </html>
