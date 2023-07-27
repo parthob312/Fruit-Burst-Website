@@ -36,15 +36,17 @@
   </head>
   <body>
     <!-- nav container -->
-    <nav class="relative container mx-auto px-5 pt-4 lg:px-0 lg:pt-[50px]">
+    <nav
+      class="relative container mx-auto px-5 pt-4 lg:px-4 xl:px-0 lg:pt-[50px]"
+    >
       <!-- flex for all item -->
       <div
-        class="flex items-center justify-between lg:bg-light-red lg:px-[50px] lg:py-8 lg:rounded-full"
+        class="flex items-center justify-between lg:bg-light-red lg:px-[50px] lg:py-8 lg:rounded-full lg:flex-row-reverse xl:flex-row"
       >
         <!-- flex container for logo and menu and search -->
         <!-- right menu -->
         <div
-          class="hidden space-x-[30px] font-poppins text-lg font-medium lg:flex"
+          class="hidden space-x-[30px] font-poppins text-lg font-medium lg:flex xl:flex"
         >
           <a href="#" class="text-white hover:text-black">Home</a>
           <a href="#" class="text-white hover:text-black">About Us</a>
@@ -63,7 +65,7 @@
           <h1>Fruit Burst</h1>
         </div>
         <!-- search -->
-        <div class="relative hidden lg:block">
+        <div class="relative hidden xl:block">
           <input
             type="search"
             name="search"
@@ -99,12 +101,12 @@
     <main>
       <!-- exotic tastes -->
       <div
-        class="relative container mx-auto px-5 py-6 lg:pt-14 lg:pb-[265px] lg:px-0"
+        class="relative container mx-auto px-5 py-6 lg:pt-14 lg:pb-[265px] lg:px-4 xl:px-0"
       >
         <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full">
             <div
-              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-[340px] lg:pb-[155px] lg:pr-[339px] xl:pr-0 xl:pl-0 bg-gradient-to-r from-[#121212] to-[#121212]"
+              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-0 2xl:pl-[340px] lg:pb-[100px] xl:pb-[155px] lg:pr-0 2xl:pr-[339px] xl:pr-0 xl:pl-0"
               style="
                 background-image: url('./images/banner1.png');
                 background-size: 100% 100%;
@@ -145,7 +147,7 @@
           </div>
           <div id="slide2" class="carousel-item relative w-full">
             <div
-              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-[390px] lg:pb-[205px] lg:pr-[389px] bg-gradient-to-r from-[#121212] to-[#121212]"
+              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-0 2xl:pl-[340px] lg:pb-[100px] xl:pb-[155px] lg:pr-0 2xl:pr-[339px] xl:pr-0 xl:pl-0"
               style="
                 background-image: url('./images/banner2.png');
                 background-size: 100% 100%;
@@ -186,7 +188,7 @@
           </div>
           <div id="slide3" class="carousel-item relative w-full">
             <div
-              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-[390px] lg:pb-[205px] lg:pr-[389px] bg-gradient-to-r from-[#121212] to-[#121212]"
+              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-0 2xl:pl-[340px] lg:pb-[100px] xl:pb-[155px] lg:pr-0 2xl:pr-[339px] xl:pr-0 xl:pl-0"
               style="
                 background-image: url('./images/banner3.png');
                 background-size: 100% 100%;
@@ -227,7 +229,7 @@
           </div>
           <div id="slide4" class="carousel-item relative w-full">
             <div
-              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-[390px] lg:pb-[205px] lg:pr-[389px] bg-gradient-to-r from-[#121212] to-[#121212]"
+              class="w-full text-center flex flex-col items-center justify-center text-white px-10 py-7 lg:pt-[79px] lg:pl-0 2xl:pl-[340px] lg:pb-[100px] xl:pb-[155px] lg:pr-0 2xl:pr-[339px] xl:pr-0 xl:pl-0"
               style="
                 background-image: url('./images/banner4.png');
                 background-size: 100% 100%;
@@ -269,7 +271,7 @@
         </div>
         <!-- five fruits -->
         <div
-          class="hidden lg:absolute lg:w-[1100px] lg:grid lg:grid-cols-5 lg:font-poppins lg:text-xl lg:font-medium lg:bottom-[157px] xl:left-[92px] 2xl:left-[214px] lg:bg-white lg:p-8"
+          class="hidden lg:absolute lg:w-[850px] xl:w-[1100px] lg:grid lg:grid-cols-5 lg:font-poppins lg:text-xl lg:font-medium lg:bottom-[135px] lg:left-[88px] xl:bottom-[157px] xl:left-[92px] 2xl:left-[214px] lg:bg-white lg:p-8"
         >
           <div class="flex flex-col items-center justify-center">
             <img src="./images/fruit1.png" alt="fruit" />
@@ -295,7 +297,7 @@
       </div>
       <!-- deal and time -->
       <div
-        class="container mx-auto flex flex-col items-center justify-center gap-5 px-[49px] lg:flex-row lg:justify-between lg:px-0 lg:gap-[540px]"
+        class="container mx-auto flex flex-col items-center justify-center gap-5 px-[49px] lg:flex-row lg:justify-between lg:px-4 xl:px-0 lg:gap-[74px] xl:gap-[540px]"
       >
         <div class="text-center font-poppins lg:text-left">
           <h1 class="text-xl font-extrabold text-dark lg:text-5xl">
@@ -347,7 +349,7 @@
       </div>
       <!-- fruits card -->
       <div
-        class="container grid grid-cols-1 gap-4 mx-auto px-5 pt-5 pb-5 lg:py-12 lg:px-0 lg:grid-cols-4"
+        class="container grid grid-cols-1 gap-4 mx-auto px-5 pt-5 pb-5 lg:py-12 lg:px-4 xl:px-0 lg:grid-cols-4"
       >
         <div
           class="flex flex-col justify-center items-center py-[49px] border border-[#12121226] rounded-lg lg:py-[50px] 2xl:px-[87px]"
@@ -606,9 +608,9 @@
         </button>
       </div>
       <!-- meet the team -->
-      <div class="container mx-auto px-5 py-6 lg:py-[140px] lg:px-0">
+      <div class="container mx-auto px-5 py-6 lg:py-[140px] lg:px-4 xl:px-0">
         <div
-          class="bg-no-repeat bg-cover bg-center text-white rounded-xl lg:py-[120px] lg:px-[110px] 2xl:px-[230px]"
+          class="bg-no-repeat bg-cover bg-center text-white rounded-xl lg:py-[120px] lg:px-0 xl:px-[110px] 2xl:px-[230px]"
           style="background-image: url('./images/team.png')"
         >
           <div class="text-center pt-6 px-7 pb-5 lg:px-0">
@@ -685,7 +687,7 @@
       </div>
       <!-- why choose us -->
       <div class="container mx-auto px-5 text-center font-poppins lg:px-0">
-        <div class="px-5 lg:px-[435px]">
+        <div class="px-5 lg:px-[185px] xl:px-[435px]">
           <h1 class="text-xl font-extrabold text-[#121212] lg:text-5xl">
             Why Choose Us
           </h1>
@@ -701,7 +703,7 @@
       <!-- choose us -->
       <div class="container mx-auto">
         <div
-          class="px-5 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:pt-12 lg:pb-[140px] lg:px-0 lg:gap-[50px]"
+          class="px-5 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:pt-12 lg:pb-[140px] lg:px-4 xl:px-0 lg:gap-[14px] xl:gap-[50px]"
         >
           <div class="flex justify-center items-center">
             <img
